@@ -1,6 +1,7 @@
 package com.zhuanghl.jfinal;
 
 import com.jfinal.config.*;
+import com.jfinal.core.JFinal;
 import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
 import com.jfinal.render.ViewType;
 import com.zhuanghl.jfinal.config.Context;
@@ -48,21 +49,21 @@ public class AppConfig extends JFinalConfig {
 //		me.add(cp);
         
         //初始化连接池插件
-        loadPropertyFile("jdbc.properties");
-        HikariCPPlugin hcp = new HikariCPPlugin(getProperty("jdbcUrl"),
-                getProperty("user"), 
-                getProperty("password"), 
-                getProperty("driverClass"), 
-                getPropertyToInt("maxPoolSize"));
-        
-        me.add(hcp);
-        
-        ActiveRecordPlugin arp = new ActiveRecordPlugin(hcp);
-		me.add(arp);
-		
-		arp.addMapping("t_user", User.USER_ID, User.class);//用户表
-        arp.addMapping("t_register_code", RegisterCode.MOBILE, RegisterCode.class); //注册验证码对象
-        arp.addMapping("t_feedback", FeedBack.class); //意见反馈表
+//        loadPropertyFile("jdbc.properties");
+//        HikariCPPlugin hcp = new HikariCPPlugin(getProperty("jdbcUrl"),
+//                getProperty("user"),
+//                getProperty("password"),
+//                getProperty("driverClass"),
+//                getPropertyToInt("maxPoolSize"));
+//
+//        me.add(hcp);
+//
+//        ActiveRecordPlugin arp = new ActiveRecordPlugin(hcp);
+//		me.add(arp);
+//
+//		arp.addMapping("t_user", User.USER_ID, User.class);//用户表
+//        arp.addMapping("t_register_code", RegisterCode.MOBILE, RegisterCode.class); //注册验证码对象
+//        arp.addMapping("t_feedback", FeedBack.class); //意见反馈表
 	}
 
     /**
@@ -92,4 +93,5 @@ public class AppConfig extends JFinalConfig {
     public void beforeJFinalStop() {
         Context.me().destroy();
     }
+
 }

@@ -5,9 +5,7 @@ import com.zhuanghl.jfinal.common.utils.StringUtils;
 import com.zhuanghl.jfinal.model.RegisterCode;
 
 /**
- * @author malongbo
- * @date 2015/2/13
- * @package com.snailbaba.action
+ * @author zhuanghl
  */
 public class IndexAction extends Controller {
     public void index () {

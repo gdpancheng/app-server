@@ -1,4 +1,4 @@
-# jfinal-api-scaffold
+# app-server
 
 ### 项目介绍
 
