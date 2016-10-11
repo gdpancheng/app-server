@@ -15,9 +15,10 @@ import java.util.Vector;
  * <br></br>
  * 默认使用utf-8编码
  *
- * @author malongbo
+ * @author zhuanghl
  */
 public class HttpRequester {
+
     private String defaultContentEncoding;
     private static final String METHOD_GET = "GET";
     private static final String METHOD_POST = "POST";
@@ -367,4 +368,5 @@ public class HttpRequester {
     public void setDefaultContentEncoding(String defaultContentEncoding) {
         this.defaultContentEncoding = defaultContentEncoding;
     }
+
 }

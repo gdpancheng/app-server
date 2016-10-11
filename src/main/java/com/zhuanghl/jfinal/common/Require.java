@@ -5,9 +5,10 @@ import java.util.List;
 
 /**
  * 存放校验条件和响应信息
- * @author malongbo
+ * @author zhuanghl
  */
 public class Require {
+
     private List<Object> conditions = new ArrayList<Object>(); //不为空的条件集合
     private List<String> messages = new ArrayList<String>(); //响应信息集合
 

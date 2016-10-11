@@ -14,7 +14,7 @@ import java.io.*;
 import java.util.*;
 
 /**
- * @author malongbo
+ * @author zhuanghl
  */
 public class XmlProperty {
 

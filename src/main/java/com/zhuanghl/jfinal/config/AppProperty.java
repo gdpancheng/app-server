@@ -8,6 +8,7 @@ import java.io.IOException;
  * @author malongbo
  */
 public class AppProperty {
+
     private XmlProperty property;
     private String propertyName = "configure.xml";
     private static AppProperty instance = new AppProperty();
