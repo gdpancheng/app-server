@@ -19,7 +19,7 @@ import com.zhuanghl.jfinal.version.VersionManager;
  * 意见反馈: POST /api/feedback
  * 版本更新检查: GET /api/version/check
  *
- * @author malongbo
+ * @author zhuanghl
  */
 public class CommonAPIController extends BaseAPIController{
 

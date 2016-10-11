@@ -9,10 +9,12 @@ import org.slf4j.LoggerFactory;
 
 /**
  * 捕获所有api action异常
- * @author malongbo
+ * @author zhuanghl
  */
 public class ErrorInterceptor implements Interceptor {
+
     private static final Logger logger = LoggerFactory.getLogger(ErrorInterceptor.class);
+
     @Override
     public void intercept(ActionInvocation ai) {
         try {
@@ -23,4 +25,5 @@ public class ErrorInterceptor implements Interceptor {
             ai.getController().renderJson(new BaseResponse(Code.ERROR, "server error"));
         }
     }
+
 }

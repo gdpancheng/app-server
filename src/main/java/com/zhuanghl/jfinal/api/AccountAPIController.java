@@ -31,7 +31,7 @@ import java.util.Map;
  * 修改密码: PUT /api/account/password
  * 修改头像: PUT /api/account/avatar
  *
- * @author malongbo
+ * @author zhuanghl
  */
 @Before(TokenInterceptor.class)
 public class AccountAPIController extends BaseAPIController {

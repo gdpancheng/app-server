@@ -46,9 +46,7 @@ public class BaseAPIController extends Controller {
      * @param message 错误信息
      */
     public void renderArgumentError(String message) {
-
         renderJson(new BaseResponse(Code.ARGUMENT_ERROR, message));
-
     }
 
     /**

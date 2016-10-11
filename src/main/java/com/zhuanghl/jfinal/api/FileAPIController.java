@@ -16,7 +16,7 @@ import java.util.Map;
 
 /**
  * 文件上传总的控制器，所有文件上传类表单均拆分成文件上传和文本提交
- * @author mlongbo
+ * @author zhuanghl
  */
 
 @Before(TokenInterceptor.class)

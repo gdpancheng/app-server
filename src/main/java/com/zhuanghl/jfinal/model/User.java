@@ -5,10 +5,10 @@ import com.jfinal.plugin.activerecord.Model;
 import java.util.Map;
 
 /**
- * @author malongbo
- * @date 2015/2/13
+ * @author zhuanghl
  */
 public class User extends Model<User> {
+
 	public static String USER_ID = "userId";
 	public static String LOGIN_NAME = "loginName";
 	public static String NICK_NAME = "nickName";

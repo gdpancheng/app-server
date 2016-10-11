@@ -8,13 +8,13 @@ import com.zhuanghl.jfinal.model.RegisterCode;
  * @author zhuanghl
  */
 public class IndexAction extends Controller {
+
     public void index () {
         render("index.jsp");
     }
     
     public void doc() {
         render("doc/index.html");
-        
     }
 
     /**
@@ -31,6 +31,6 @@ public class IndexAction extends Controller {
             }
             renderHtml(codeStr);
         }
-
     }
+
 }

@@ -9,6 +9,7 @@ import com.zhuanghl.jfinal.api.FileAPIController;
  * @author zhuanghl
  */
 public class APIRouter extends Routes {
+
     @Override
     public void config() {
         //公共api
@@ -16,6 +17,7 @@ public class APIRouter extends Routes {
         //用户相关
         add("/api/account", AccountAPIController.class);
         //文件相关
-        add("/api/fs",FileAPIController.class);
+        add("/api/fs", FileAPIController.class);
     }
+
 }

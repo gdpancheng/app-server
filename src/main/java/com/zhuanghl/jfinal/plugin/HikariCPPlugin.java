@@ -9,7 +9,7 @@ import javax.sql.DataSource;
 
 /**
  * *
- * @author malongbo
+ * @author zhuanghl
  */
 public class HikariCPPlugin implements IPlugin,IDataSourceProvider {
 
@@ -67,4 +67,5 @@ public class HikariCPPlugin implements IPlugin,IDataSourceProvider {
     public DataSource getDataSource() {
         return this.dataSource;
     }
+
 }
